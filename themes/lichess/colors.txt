@@ -1,0 +1,2 @@
+Light Square: F0D9B5
+Dark Square: B58863

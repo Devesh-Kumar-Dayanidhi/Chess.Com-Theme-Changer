@@ -2,7 +2,7 @@ const newStyle = document.createElement("style");
 
 newTheme = `
 
-#board-single, #board-primary, #board-analysis-board, #board-play-computer, #board-chessboard, .fade-in-overlay
+#board-board, #board-single, #board-primary, #board-analysis-board, #board-play-computer, #board-chessboard, .fade-in-overlay
 {
     background-image: url('https://lichess.org/assets/hashed/brown.d4a5fe34.png');
 }
@@ -105,6 +105,8 @@ const replaceTheme = async() =>
         document.getElementById("board-styles-primary").textContent = document.getElementById("unofficial-new-theme").textContent;
     if (document.getElementById("board-styles-chessboard"))
         document.getElementById("board-styles-chessboard").textContent = document.getElementById("unofficial-new-theme").textContent;
+    if (document.getElementById("board-styles-board"))
+        document.getElementById("board-styles-board").textContent = document.getElementById("unofficial-new-theme").textContent;
 }
 
 replaceTheme();
